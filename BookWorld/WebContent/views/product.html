@@ -1,0 +1,14 @@
+  <div ng-repeat="products in products | filter:{categoryId:categoryid}" class="col-md-3">
+      <div class="thumbnail">
+         <img  class="imageStyle" src={{products.imagePath}} alt="Lights" >
+         <div class="caption">
+            <p>{{products.bookName}}</p><span><button ng-click="checkForSubscription(products.bookId)" class="btn btn-success">Subscribe</button></span>
+            
+         </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    <!-- Thumbnail div ng-click="getParticularDetail(products.bookId)" -->
